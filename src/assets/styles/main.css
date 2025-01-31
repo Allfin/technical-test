@@ -1,9 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 
+:root {
+  --black: black;
+  --yellow: #fcf944;
+  --blue: #3e88ff;
+  --green: #31be32;
+  --plum: #ff97d0;
+  --white: white;
+}
+
 * {
   padding: 0;
   margin: 0;
   font-family: "DM Sans", sans-serif;
   box-sizing: border-box;
   font-weight: 400;
+}
+
+h1 {
+  font-size: clamp(19px, 4vw, 41px);
+  font-weight: 700;
+}
+
+p {
+  font-size: clamp(12px, 4vw, 36px);
 }
