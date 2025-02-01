@@ -45,7 +45,7 @@ export default {
   },
 };
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 .card-wrapper {
   background-color: var(--yellow);
   height: 100%;
