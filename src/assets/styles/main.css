@@ -17,6 +17,11 @@
   font-weight: 400;
 }
 
+.container {
+  width: 100%;
+  padding: 10% 10%;
+}
+
 h1 {
   font-size: clamp(19px, 4vw, 41px);
   font-weight: 700;
