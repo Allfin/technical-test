@@ -30,7 +30,7 @@ export default {
       // Animasi menggunakan GSAP dan ScrollTrigger
       gsap.from(".text", {
         duration: 1,
-        x: 200,
+        x: 50,
         opacity: 0,
         scrollTrigger: {
           trigger: ".text", // Element yang memicu animasi
@@ -42,7 +42,7 @@ export default {
 
       gsap.from(".logo", {
         duration: 1,
-        y: -200,
+        y: -50,
         opacity: 0,
         scrollTrigger: {
           trigger: ".logo", // Element yang memicu animasi
@@ -54,7 +54,7 @@ export default {
 
       gsap.from(".social", {
         duration: 1,
-        y: 200,
+        y: 50,
         opacity: 0,
         scrollTrigger: {
           trigger: ".social", // Element yang memicu animasi
@@ -122,39 +122,37 @@ export default {
 
 <template>
   <section class="hero">
-    <div class="container">
-      <div class="hero-content">
-        <div class="hero-logo-wrapper">
-          <img
-            v-if="showFirstImage"
-            src="@/assets/images/isa-logo-cat-clean.svg"
-            alt="Logo"
-            class="logo"
-          />
-          <img
-            v-else
-            src="@/assets/images/isa-logo-dog-clean.svg"
-            alt="Logo"
-            class="logo"
-          />
-          <div class="text">
-            <h1>
-              Innovative <br />Solutions <br />for <br />
-              Animals
-            </h1>
-          </div>
+    <div class="hero-content">
+      <div class="hero-logo-wrapper">
+        <img
+          v-if="showFirstImage"
+          src="@/assets/images/isa-logo-cat-clean.svg"
+          alt="Logo"
+          class="logo"
+        />
+        <img
+          v-else
+          src="@/assets/images/isa-logo-dog-clean.svg"
+          alt="Logo"
+          class="logo"
+        />
+        <div class="text">
+          <h1>
+            Innovative <br />Solutions <br />for <br />
+            Animals
+          </h1>
         </div>
-        <div class="social">
-          <p>charity organization</p>
-          <div class="social-icons">
-            <img
-              v-for="icon in icons"
-              :key="icon.name"
-              :src="icon.src"
-              :alt="icon.name"
-              class="icon"
-            />
-          </div>
+      </div>
+      <div class="social">
+        <p>charity organization</p>
+        <div class="social-icons">
+          <img
+            v-for="icon in icons"
+            :key="icon.name"
+            :src="icon.src"
+            :alt="icon.name"
+            class="icon"
+          />
         </div>
       </div>
     </div>
