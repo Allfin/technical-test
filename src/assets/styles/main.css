@@ -17,16 +17,59 @@
   font-weight: 400;
 }
 
+.background-blue {
+  background-color: var(--blue);
+}
+
+.background-black {
+  background-color: var(--black);
+}
+
+.background-green {
+  background-color: var(--green);
+}
+
+.background-plum {
+  background-color: var(--plum);
+}
+
 .container {
   width: 100%;
   padding: 10% 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+p,
+span {
+  font-size: 3.75vw;
 }
 
 h1 {
-  font-size: 4vw;
+  font-size: 8vw;
   font-weight: 700;
 }
 
-p {
-  font-size: 2.5vw;
+h2 {
+  font-size: 6vw;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 479px) {
+  h1 {
+    font-size: 4vw;
+  }
+
+  h2 {
+    font-size: 3vw;
+  }
+
+  p {
+    font-size: 2.5vw;
+  }
+
+  span {
+    font-size: 2vw;
+  }
 }
