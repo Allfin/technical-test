@@ -18,7 +18,7 @@ export default {
           trigger: ".project-wrap", // Element yang memicu animasi
           start: "top 80%", // Mulai animasi saat 80% dari elemen masuk ke viewport
           end: "bottom 20%", // Akhiri animasi saat 20% dari elemen keluar dari viewport
-          toggleActions: "play none play reverse",
+          toggleActions: "play reverse play reverse",
         },
       });
     },
