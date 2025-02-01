@@ -81,8 +81,6 @@ export default {
   gap: 2rem;
 
   .team {
-    background-color: var(--yellow);
-
     :hover {
       cursor: pointer;
     }

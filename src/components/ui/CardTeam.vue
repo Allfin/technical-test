@@ -15,7 +15,19 @@ export default {
       // Gunakan require untuk memuat gambar dinamis
       return require(`@/assets/images/${img}`);
     },
-    initAnimation() {},
+    initAnimation() {
+      gsap.from(this.$refs.cardRefWrapper, {
+        duration: 1,
+        y: 50,
+        opacity: 0,
+        scrollTrigger: {
+          trigger: this.$refs.cardRefWrapper, // Element yang memicu animasi
+          start: "top 80%", // Mulai animasi saat 80% dari elemen masuk ke viewport
+          end: "bottom 20%", // Akhiri animasi saat 20% dari elemen keluar dari viewport
+          toggleActions: "play reverse play reverse",
+        },
+      });
+    },
     handleMouseEnter() {
       gsap.to(this.$refs.cardRef, {
         scale: 0.9, // Perbesar 1.5x dari ukuran asli
@@ -35,6 +47,7 @@ export default {
 </script>
 <style lang="scss">
 .card-wrapper {
+  background-color: var(--yellow);
   height: 100%;
   .card {
     border: 0.25em solid var(--black);
@@ -69,6 +82,7 @@ export default {
 
 <template>
   <div
+    ref="cardRefWrapper"
     class="card-wrapper"
     @mouseenter="handleMouseEnter"
     @mouseleave="handleMouseLeave"
