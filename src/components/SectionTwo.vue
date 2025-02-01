@@ -27,11 +27,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
-p {
-  margin: 30px 0;
-}
-
+<style lang="scss" scoped>
 .quote-container {
   margin-left: 4rem;
   padding: 20px;
