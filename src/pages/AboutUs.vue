@@ -1,12 +1,15 @@
 <template>
-  <SectionOne />
-  <SectionTwo />
-  <SectionThree />
-  <SectionFour />
-  <SectionFive />
-  <SectionSix />
-  <SectionSeven />
-  <AppFooter />
+  <div class="app">
+    <ButtonDonate />
+    <SectionOne />
+    <SectionTwo />
+    <SectionThree />
+    <SectionFour />
+    <SectionFive />
+    <SectionSix />
+    <SectionSeven />
+    <AppFooter />
+  </div>
 </template>
 
 <script>
@@ -18,6 +21,7 @@ import SectionFive from "@/components/SectionFive.vue";
 import SectionSix from "@/components/SectionSix.vue";
 import SectionSeven from "@/components/SectionSeven.vue";
 import AppFooter from "@/components/AppFooter.vue";
+import ButtonDonate from "@/components/ui/ButtonDonate.vue";
 
 export default {
   components: {
@@ -29,8 +33,12 @@ export default {
     SectionSix,
     SectionSeven,
     AppFooter,
+    ButtonDonate,
   },
 };
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+.app {
+}
+</style>
