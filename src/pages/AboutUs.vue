@@ -6,6 +6,7 @@
   <SectionFive />
   <SectionSix />
   <SectionSeven />
+  <AppFooter />
 </template>
 
 <script>
@@ -16,6 +17,7 @@ import SectionFour from "@/components/SectionFour.vue";
 import SectionFive from "@/components/SectionFive.vue";
 import SectionSix from "@/components/SectionSix.vue";
 import SectionSeven from "@/components/SectionSeven.vue";
+import AppFooter from "@/components/AppFooter.vue";
 
 export default {
   components: {
@@ -26,6 +28,7 @@ export default {
     SectionFive,
     SectionSix,
     SectionSeven,
+    AppFooter,
   },
 };
 </script>
